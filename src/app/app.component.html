@@ -1,15 +1,17 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>HadesCompanionApp</title>
 </head>
-<body *ngIf="showHome">
-    <h1>Hell's Tome</h1>
-    <p>A Hades companion app</p>
-    <nav>
-        <button (click)="toggleHome()" [routerLink] ="'/new-run'">Start a new run!</button>
-        <button [routerLink] ="'/new-run'">Player History</button>
-    </nav>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="/home" routerLinkActive="active">Hell's Tome</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
 </body>
 <router-outlet></router-outlet>
