@@ -16,7 +16,7 @@ import { BoonsComponent } from './boons/boons.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
