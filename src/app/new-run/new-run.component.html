@@ -4,7 +4,9 @@
   <meta charset="utf-8">
   <title>HadesCompanionApp</title>
 </head>
-<body>
-    <p>hello?</p>
-</body>
+<div *ngFor="let weapon of weapons">
+  <div>
+    <img src={{weapon.img}} alt={{weapon.name}}>
+  </div>
+</div>
 <router-outlet></router-outlet>
