@@ -1,1 +1,12 @@
-<p>boons works!</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HadesCompanionApp</title>
+</head>
+<div *ngFor="let weapon of weapons">
+  <div>
+    <img src={{weapon.img}} alt={{weapon.name}}>
+  </div>
+</div>
+<router-outlet></router-outlet>
