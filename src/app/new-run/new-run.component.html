@@ -5,8 +5,16 @@
   <title>HadesCompanionApp</title>
 </head>
 <div *ngFor="let weapon of weapons">
-  <div>
+  <a>
     <img src={{weapon.img}} alt={{weapon.name}}>
-  </div>
+  </a>
+  <br>
+  <select name="aspect" id="aspect">
+    <option disabled selected value> -- Select An Option -- </option>
+    <option value="1">{{weapon.aspect1}}</option>
+    <option value="2">{{weapon.aspect2}}</option>
+    <option value="3">{{weapon.aspect3}}</option>
+    <option value="4">{{weapon.aspect4}}</option>
+  </select>
 </div>
 <router-outlet></router-outlet>

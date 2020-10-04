@@ -6,3 +6,14 @@ div {
     float: left;
     margin-right: 18px;
 }
+
+select {
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+option {
+    color: white;
+}
